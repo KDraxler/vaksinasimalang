@@ -86,22 +86,25 @@ p#desc{
 /* ------------------------------------------------------------- */
 .navigation{
     height: 121px;
-    /* width: 1298px; */
-    width: 100%;
-    
+    position: fixed;
     background-color: #FAFAFA;
+    z-index:99999;
+    width: 100%;
+    top: 0;
+}
+.navigation .nav-items{
+    height: 100%;
+    padding: 0 72px;
+    margin: auto;
+    max-width: 1442px;
+
     display: flex;
     justify-content: space-between;
     font-weight: 400;
     align-items: center;
-    position: fixed;
-    top: 0;
-    z-index:99;
-    padding: 0 6.5%;
     /* box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px; */
-    
 }
-.navigation .logo{
+.navigation .nav-items .logo{
     display: flex;
     font-style: normal;
     font-weight: bold;
@@ -109,11 +112,11 @@ p#desc{
     align-items: center;
     cursor: pointer;
 }
-.navigation .logo img{
+.navigation .nav-items .logo img{
     height: 48px;
     width: 48px;
 }
-.navigation .logo h1{
+.navigation .nav-items .logo h1{
     /* position: absolute; */
     width: 246px;
     height: 33px;
@@ -123,23 +126,23 @@ p#desc{
     line-height: 33px;
     font-weight: 400;
 }
-.navigation .logo h1 span{
+.navigation .nav-items .logo h1 span{
     font-weight: 700;
 }
-.navigation .menu{
+.navigation .nav-items .menu{
     /* display: flex; */
     font-weight: 700;
     font-size: 18px;
     line-height: 22px;
 }
-.navigation .menu ul{
+.navigation .nav-items .menu ul{
     list-style: none;
     display: flex;
     flex-direction: row;
     cursor: pointer;
     gap: 48px;
 }
-.navigation .login button{
+.navigation .nav-items .login button{
     width: 202px;
     height: 54px;
     padding: 0 13px 0 13px;
@@ -151,7 +154,7 @@ p#desc{
     font-size: 18px;
     cursor: pointer;
 }
-.navigation .login button:hover{
+.navigation .nav-items .login button:hover{
     background-color: #2A7DF4;
     border: none;
     color: #FAFAFA;
