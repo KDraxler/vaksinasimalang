@@ -15,6 +15,14 @@ body{
 
 }
 
+a{
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 p{
     color: #5D656B;
 }
@@ -70,6 +78,12 @@ p#desc{
     padding: 24px 0;
     cursor: pointer;
     
+}
+.anchor{
+    display: block;
+    height: 51px; /*same height as header*/
+    margin-top: -51px; /*same height as header*/
+    visibility: hidden;
 }
 
 .container-content{
@@ -328,14 +342,12 @@ p#desc{
 /* end home */
 /* ------------------------------------------------------------- */
 
-
 /* ------------------------------------------------------------- */
 /* start about */
 /* ------------------------------------------------------------- */
 .container-content .about{
     display: grid;
     margin-top: 80px;
-
 }
 .container-content .about .content-about{
     display: grid;
