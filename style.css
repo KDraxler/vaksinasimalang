@@ -109,6 +109,7 @@ p#desc{
     z-index:99999;
     width: 100%;
     top: 0;
+    
 }
 .navigation .nav-items{
     height: 100%;
@@ -192,15 +193,17 @@ p#desc{
 /* ------------------------------------------------------------- */
 .container-content .home{
     display: grid;
-    height: 800px;
+    height: 714px;
     margin-top: 72px;
     /* width: 100%; */
     background: url('images/mbak.png');
     /* background-color: rgb(174, 204, 204); */
-    background-position: 100% 50%; 
+    background-position: 100% 100%; 
     background-size: 690px 628px;
     background-repeat: no-repeat;
     font-weight: 700;
+    scroll-margin-top: 80px;
+
 }
 .container-content .home .content-home{
     display: grid;
@@ -212,6 +215,7 @@ p#desc{
     ;
     grid-template-columns: 50% auto;
     align-self: center;
+    margin-top: 86px;
 }
 .container-content .home .content-home .ch1{
     display: flex;
@@ -355,7 +359,10 @@ p#desc{
 /* ------------------------------------------------------------- */
 .container-content .about{
     display: grid;
-    margin-top: 80px;
+    margin-top: 100px;
+    /* background-color: #22445E; */
+    outline-offset: 121px;
+    scroll-margin-top: 230px;
 }
 .container-content .about .content-about{
     display: grid;
@@ -393,38 +400,11 @@ p#desc{
 /* ------------------------------------------------------------- */
 /* start jenis vaksin */
 /* ------------------------------------------------------------- */
-/* ol {
-    counter-reset: my-awesome-counter;
-    list-style: none;
-    padding-left: 40px;
-}
-ol li {
-    margin: 0 0 0.5rem 0;
-    counter-increment: my-awesome-counter;
-    position: relative;
-}
-ol li::before {
-    content: counter(my-awesome-counter);
-    counter-increment: my-awesome-counter1;
-    color: #FFFFFF;
-    font-size: 16px;
-    font-weight: 500;
-    position: absolute;
-    --size: 36px;
-    left: calc(-1 * var(--size) - 10px);
-    line-height: var(--size);
-    width: var(--size);
-    height: var(--size);
-    top: 0;
-    background: #2A7DF4;
-    border-radius: 50%;
-    text-align: center;
-    box-shadow: #FAFAFA 0px 0px 0px 5px, #2A7DF4 0px 0px 0px 6px ;
-} */
-
 .container-content .jenis-vaksin{
     display: grid;
     margin-top: 100px;
+    scroll-margin-top: 230px;
+    /* background-color: #230A44; */
 }
 .container-content .jenis-vaksin .content-jv{
     display: grid;
@@ -528,6 +508,8 @@ ol li::before {
 .container-content .total{
     display: grid;
     margin-top: 100px;
+    scroll-margin-top: 230px;
+    /* background-color: #5D656B; */
 
 }
 .container-content .total .total-content{
@@ -636,6 +618,8 @@ ol li::before {
     display: grid;
     justify-content: center;
     margin-top: 100px;
+    /* background-color: aqua; */
+    scroll-margin-top: 230px;
 }
 .container-content .cara-daftar .content-cd{
     display: grid;
@@ -838,6 +822,7 @@ ol li::before {
 .container-content .lokasi-vaksin{
     display: grid;
     margin-top: 100px;
+    scroll-margin-top: 230px;
     /* background-color: rgba(63, 29, 255, 0.5); */
 }
 .container-content .lokasi-vaksin .content-lv{
@@ -995,6 +980,7 @@ background-color: rgba(255, 255, 255, 0);
     background-position: 90% 50%; 
     background-size: 631px 431px;
     background-repeat: no-repeat;
+    scroll-margin-top: 230px;
     background-color: #2A7DF4;
 }
 .container-content .banner .content-banner{

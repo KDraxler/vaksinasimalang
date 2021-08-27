@@ -26,9 +26,9 @@
             </div>
             <div class="menu">
                 <ul>
-                    <li class="active"><a href="#">Beranda</a></li>
-                    <li><a href="#tentang">Tentang</a></li>
-                    <li><a href="#caradftr">Cara Daftar</a></li>
+                    <li class="home active"><a href="#home">Beranda</a></li>
+                    <li class="about"><a href="#about">Tentang</a></li>
+                    <li class="cd"><a href="#cd">Cara Daftar</a></li>
                 </ul>
             </div>
             <div class="login">
@@ -40,8 +40,8 @@
     <div class="container-content">
 
         <!-- start Home -->
-        <div id="beranda" class="anchor"></div>
-        <div class="home">
+        <!-- <section id="beranda" class="anchor"></section> -->
+        <section class="home" id="home">
             <div class="content-home">
                 <div class="ch1">
                     <p id="title" class="animate__animated animate__fadeInUp animate__slow">Stop covid-19</p>
@@ -73,12 +73,11 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         <!-- end Home -->
 
         <!-- start about -->
-        <div id="tentang" class="anchor"></div>
-        <div data-aos="fade-up" data-aos-offset="80" class="about">
+        <section data-aos="fade-up" data-aos-offset="80" class="about" id="about">
             <div class="content-about">
                 <div class="ca1">
                     <p id="title">tentang vaksin</p>
@@ -97,11 +96,11 @@
                     <img src="images/coblos.png" alt="">
                 </div>
             </div>
-        </div>
+        </section>
         <!-- end about -->
 
         <!-- start jenis vaksin -->
-        <div data-aos="fade-up" data-aos-offset="80" class="jenis-vaksin">
+        <section data-aos="fade-up" data-aos-offset="80" class="jenis-vaksin" id="jv">
             <div class="content-jv">
                 <div class="jv1">
                     <p id="title">jenis vaksin</p>
@@ -159,11 +158,11 @@
                     </ol>
                 </div>
             </div>
-        </div>
+        </section>
         <!-- end jenis vaksin -->
 
         <!-- start total kasus -->
-        <div data-aos="fade-up" data-aos-offset="-100" class="total">
+        <section data-aos="fade-up" data-aos-offset="-100" class="total" id="tk">
             <div class="total-content">
                 <div class="tc1">
                     <h2>Total Keseluruhan Vaksin Kota Malang</h2>
@@ -206,19 +205,19 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         <!-- end total kasus -->
 
         <!-- start cara daftar -->
-        <div id="caradftr" class="anchor"></div>
-        <div data-aos="fade-up" data-aos-offset="-130" data-aos-anchor-placement="top-bottom" class="cara-daftar">
+        <!-- <section id="caradftr" class="anchor"></section> -->
+        <section data-aos="fade-up" data-aos-offset="-130" data-aos-anchor-placement="top-bottom" class="cara-daftar" id="cd">
             <div class="content-cd">
                 <div class="cd1">
                     <h2>Tata Cara Daftar Vaksin</h2>
                 </div>
                 <div class="cd2">
                     <p id="desc">
-                        Begini caranya daftar vaksin di website Vaksinasi Malang, diperhatikan ya <br> caranya bagaimana dan kiranya sudah paham kamu bisa mencoba daftar <br> <a href="#lokasivksn"><span>disini</span></a>
+                        Begini caranya daftar vaksin di website Vaksinasi Malang, diperhatikan ya <br> caranya bagaimana dan kiranya sudah paham kamu bisa mencoba daftar <br> <a href="#lv"><span>disini</span></a>
                     </p>
                 </div>
                 <div class="bg">
@@ -277,12 +276,12 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         <!-- end cara daftar -->
 
         <!-- start lokasi vaksin -->
-        <div id="lokasivksn" class="anchor"></div>
-        <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-offset="-100" class="lokasi-vaksin">
+        <!-- <div id="lokasivksn" class="anchor"></div> -->
+        <section data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-offset="-120" class="lokasi-vaksin" id="lv">
             <div class="content-lv">
                 <div class="lv1">
                     <h2>Lokasi Vaksinasi Kota <br> Malang</h2>
@@ -439,21 +438,21 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         <!-- end lokasi vaksin -->
 
         <!-- start banner -->
-        <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-offset="-300" class="banner">
+        <section data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-offset="-300" class="banner" id="banner">
             <div class="content-banner">
                 <h2>Siap untuk Vaksinasi <br> COVID-19??</h2>
                 <p>Jika kamu sudah siap dan mantap, daftarkan diri kamu <br> sekarang juga di website Vaksinasi Malang</p>
                 <button>Daftar Sekarang</button>
             </div>
-        </div>
+        </section>
         <!-- end banner -->
 
         <!-- start footer -->
-        <div class="footer">
+        <section class="footer" id="footer">
             <div class="content-ft">
                 <div class="ft1">
                     <div class="lp">
@@ -466,9 +465,9 @@
                     <div class="nvg">
                         <span>Navigation</span>
                         <ul>
-                            <li><a href="#beranda">Beranda</a></li>
-                            <li><a href="#tentang">Tentang</a></li>
-                            <li><a href="#caradftr">Cara Daftar</a></li>
+                            <li><a href="#home">Beranda</a></li>
+                            <li><a href="#about">Tentang</a></li>
+                            <li><a href="#cd">Cara Daftar</a></li>
                         </ul>
                     </div>
                     <div class="cmp">
@@ -500,7 +499,7 @@
                 </div>
                 
             </div>
-        </div>
+        </section>
         <!-- end footer -->
 
 
