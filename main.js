@@ -3,6 +3,8 @@ const navLi = document.querySelectorAll('nav .nav-items .menu ul li');
 
 
 window.addEventListener('scroll', ()=> {
+    scrollFunction()
+    
     let current = '';
 
     sections.forEach(section => {
@@ -23,7 +25,7 @@ window.addEventListener('scroll', ()=> {
     })
 })
 
-window.onscroll = function() {scrollFunction()};
+// window.onscroll = function() {scrollFunction()};
 
 $(document).ready(function(){
     ngitung(10,300);
