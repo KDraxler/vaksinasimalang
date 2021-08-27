@@ -160,6 +160,10 @@ p#desc{
     cursor: pointer;
     gap: 48px;
 }
+.navigation .nav-items .menu ul li.active a{
+    color: #2A7DF4;
+
+}
 .navigation .nav-items .login button{
     width: 202px;
     height: 54px;

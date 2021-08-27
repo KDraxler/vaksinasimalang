@@ -1,6 +1,15 @@
 window.onscroll = function() {scrollFunction()};
 
 
+$(document).ready(function(){
+    ngitung(10,300);
+});
+
+
+$(Document).on('click', 'ul li', function(){
+    $(this).addClass('active').siblings().removeClass('active');
+})
+
 function scrollFunction() {
     
     let itung = document.getElementsByClassName("tc3");
@@ -16,9 +25,3 @@ function ngitung(d,t){
     $(".num").counterUp({delay:d, time:t})
     
 }
-
-$(document).ready(function(){
-    ngitung(10,300);
-});
-
-
