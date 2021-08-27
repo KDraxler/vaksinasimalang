@@ -19,6 +19,10 @@ a{
     text-decoration: none;
 }
 
+a:hover{
+    color: #2A7DF4;
+}
+
 html {
     scroll-behavior: smooth;
 }
