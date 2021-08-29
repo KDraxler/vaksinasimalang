@@ -48,7 +48,7 @@ function ngitung(d,t){
     $(".num").counterUp({delay:d, time:t})
     
 }
-
+// random item div
 function shuffle(array) {
     var currentIndex = array.length,
     temporaryValue, randomIndex;
