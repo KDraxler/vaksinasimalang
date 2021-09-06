@@ -80,8 +80,7 @@ p#desc{
     display: flex;
     gap: 20px;
     padding: 24px 0;
-    cursor: pointer;
-    
+    cursor: pointer; 
 }
 .anchor{
     display: block;
@@ -1158,15 +1157,21 @@ background-color: rgba(255, 255, 255, 0);
     }
     
     a#link{
-        font-size: 22px;
-        line-height: 33px;
-        color: #2A7DF4;
-        font-weight: 700;
-        text-decoration: none;
-        /* display: flex; */
-        align-items: center;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 18px;
     }
-    
+    .link{
+        display: flex;
+        gap: 6px;
+        align-items: center;
+        padding: 0;
+        cursor: pointer; 
+    }
+    .link img{
+        width: 10px;
+        height: 10px;
+    }
     p#title{
         text-transform: uppercase;
         color: #2A7DF4;
@@ -1179,11 +1184,10 @@ background-color: rgba(255, 255, 255, 0);
     }
     
     p#desc{
-        font-size: 24px;
-        line-height: 36px;
-        font-weight: 400;
-        color: #5D656B;
-        margin-top: 13px;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 18px;
+        margin-top: 0;
     }
     body{
         zoom: 100%;
@@ -1308,6 +1312,104 @@ background-color: rgba(255, 255, 255, 0);
         padding: 0;
         font-size: 10px;
         line-height: 12px;
+    }
+    /* about */
+    .container-content .about{
+        width: 100%;
+        margin-top: 32px;
+        /* background-color: #9fc0da; */
+    }
+    .container-content .about .content-about{
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        gap: 45px;
+    }
+    .container-content .about .content-about .ca1{
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+    .container-content .about .content-about .ca2{
+        justify-content: center;
+    }
+    .container-content .about .content-about .ca2 img{
+        height: 249px;
+        width: 249px;
+    }
+
+    /* jenis vaksin */
+    .container-content .jenis-vaksin{
+        display: grid;
+        margin-top: 32px;
+        scroll-margin-top: 230px;
+        /* background-color: #230A44; */
+    }
+    .container-content .jenis-vaksin .content-jv{
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+    }
+    .container-content .jenis-vaksin .content-jv .jv1{
+        display: flex;
+        padding-bottom: 12px;
+        justify-content: center;
+        /* background-color: rgba(76, 64, 255, 0.5); */
+    }
+    .container-content .jenis-vaksin .content-jv .jv2{
+        grid-area: jv2;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding-bottom: 0;
+    }
+    .container-content .jenis-vaksin .content-jv .jv2 h2 br{
+        display: none;
+    }
+
+    .container-content .jenis-vaksin .content-jv .jv3{
+        padding: 24px 0;
+    }
+    .container-content .jenis-vaksin .content-jv .jv3 img{
+        display: none;
+    }
+    .container-content .jenis-vaksin .content-jv .jv4{
+        display: flex;
+        /* background-color: rgba(248, 255, 37, 0.5); */
+    }
+    .container-content .jenis-vaksin .content-jv .jv4 .li-content{
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 9;
+    }
+    .container-content .jenis-vaksin .content-jv .jv4 ol{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    
+        list-style: none;
+        padding-left: 0;
+    }
+    .container-content .jenis-vaksin .content-jv .jv4 ol li{
+        margin: 0 0 0.5rem 0;
+        position: relative;
+        /* background-color: #adbacc; */
+    }
+    .container-content .jenis-vaksin .content-jv .jv4 ol li::before{
+        display: none;
+    }
+    .container-content .jenis-vaksin .content-jv .jv4 .li-content .jv4-title{
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 13px;
+    }
+    .container-content .jenis-vaksin .content-jv .jv4 .li-content .jv4-desc{
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 18px;
+        margin-bottom: 12px;
     }
 }
 
