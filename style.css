@@ -1197,16 +1197,16 @@ background-color: rgba(255, 255, 255, 0);
         overflow-x: auto;
         width: 100%;
         height: 70px;
-        background-color: #adbacc;
+        /* background-color: #adbacc; */
     }
     .navigation .nav-items{
         height: 100%;
-        padding: 0 72px;
+        padding: 0;
         margin: auto;
         max-width: 1442px;
     
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         font-weight: 400;
         align-items: center;
         /* box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px; */
@@ -1216,28 +1216,28 @@ background-color: rgba(255, 255, 255, 0);
         font-style: normal;
         font-weight: bold;
         line-height: 33px;
-        align-items: center;
+        align-items: flex-start;
         cursor: pointer;
     }
     .navigation .nav-items .logo img{
-        height: 48px;
-        width: 48px;
+        height: 20px;
+        width: 20px;
     }
     .navigation .nav-items .logo h1{
         /* position: absolute; */
-        width: 246px;
+        width: 100%;
         height: 33px;
-        margin-left: 13px;
-        font-size: 30px;
+        margin-left: 10px;
+        font-size: 13.1879px;
+        line-height: 20px;
         font-style: normal;
-        line-height: 33px;
         font-weight: 400;
     }
     .navigation .nav-items .logo h1 span{
         font-weight: 700;
     }
     .navigation .nav-items .menu{
-        /* display: flex; */
+        display: none;
         font-weight: 700;
         font-size: 18px;
         line-height: 22px;
@@ -1254,6 +1254,7 @@ background-color: rgba(255, 255, 255, 0);
     
     }
     .navigation .nav-items .login button{
+        display: none;
         width: 202px;
         height: 54px;
         padding: 0 13px 0 13px;
