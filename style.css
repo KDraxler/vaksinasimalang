@@ -1143,9 +1143,9 @@ background-color: rgba(255, 255, 255, 0);
 /* Mobile version */
 @media (max-width:1080px) {
     p#lv-p{
-        font-size: 22px;
-        line-height: 33px;
-        font-weight: 400;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 18px;
         color: #5D656B;
         
     }    
@@ -1201,8 +1201,8 @@ background-color: rgba(255, 255, 255, 0);
     .container-content{
         display: flex;
         flex-direction: column;
-        padding: 3px;
-        width: 87%;
+        padding: 5px;
+        width: 93%;
         overflow-y: auto;
         /* background-color: cadetblue; */
     }
@@ -1342,7 +1342,7 @@ background-color: rgba(255, 255, 255, 0);
     .container-content .jenis-vaksin{
         display: grid;
         margin-top: 32px;
-        scroll-margin-top: 230px;
+        width: 100%;
         /* background-color: #230A44; */
     }
     .container-content .jenis-vaksin .content-jv{
@@ -1410,6 +1410,537 @@ background-color: rgba(255, 255, 255, 0);
         font-size: 12px;
         line-height: 18px;
         margin-bottom: 12px;
+    }
+
+    /* total kasus */
+    .container-content .total{
+        display: grid;
+        margin-top: 32px;
+        /* background-color: #c2cdd6; */
+        width: 100%;
+    }
+    .container-content .total .total-content{
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+    }
+    .container-content .total .total-content .tc1{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 16px;
+        text-align: center;
+        /* background-color: rgba(97, 97, 255, 0.5); */
+    }
+    .container-content .total .total-content .tc2{
+        grid-area: tc2;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding-bottom: 30px;
+        /* background-color: rgba(97, 255, 105, 0.5); */
+    }
+    .container-content .total .total-content .tc2 p br{
+        display: none;
+    }
+    .container-content .total .total-content .tc3{
+        grid-area: tc3;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: space-evenly;
+        /* background-color: rgba(255, 252, 97, 0.5); */
+        
+    }
+    .container-content .total .total-content .tc3 p#desc{
+        margin-top: -7px;
+    }
+    .container-content .total .total-content .tc3 img{
+        width: 72px;
+    }
+    .container-content .total .total-content .tc3 .tc3-1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+    
+        /* background-color: rgba(255, 89, 23, 0.5); */
+        width: 136px;
+        height: 149px;
+        
+    }
+    .container-content .total .total-content .tc3 .number{
+        display: flex;
+        flex-direction: row;
+    }
+    .container-content .total .total-content .tc3 .tc3-2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+    
+        /* background-color: rgba(78, 212, 37, 0.5); */
+        width: 136px;
+        height: 149px;
+        
+    }
+    .container-content .total .total-content .tc3 .tc3-3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+    
+        /* background-color: rgba(236, 51, 236, 0.5); */
+        width: 136px;
+        height: 149px;
+        
+    }
+    .container-content .total .total-content .tc3 .tc3-4{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+    
+        /* background-color: rgba(218, 250, 36, 0.5); */
+        width: 136px;
+        height: 149px;
+    }
+
+    /* tata cara */
+    .container-content .cara-daftar{
+        margin-top: 32px;
+        width: 100%;
+        /* background-color: aqua; */
+    }
+    .container-content .cara-daftar .content-cd{
+        display: flex;
+        flex-direction: column;
+    }
+    .container-content .cara-daftar .content-cd .cd1{
+        padding-bottom: 12px;
+    }
+    .container-content .cara-daftar .content-cd .cd2{
+        padding-bottom: 16px;
+    }
+    .container-content .cara-daftar .content-cd .cd2 p br{
+        display: none;
+    }
+    .container-content .cara-daftar .content-cd .bg{
+        padding: 0 20px;
+        margin: auto;
+        display: grid;
+        justify-content: center;
+        
+        background: none;
+        background-position: 100% 50%; 
+        background-size: 0;
+        background-repeat: no-repeat;
+        /* background-color: rgb(175, 117, 117); */
+    }
+    
+    .container-content .cara-daftar .content-cd .bg .cd3{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 20px;
+        /* background-color: rgb(174, 204, 204); */
+    }
+    .container-content .cara-daftar .content-cd .bg .cd3 .number{
+        font-weight: bold;
+        font-size: 10px;
+        line-height: 12px;
+        width: 24px;
+        height: 24px;
+    }
+    .container-content .cara-daftar .content-cd .bg .cd3 h3{
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .container-content .cara-daftar .content-cd .bg .cd3 p#jero{
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .container-content .cara-daftar .content-cd .bg .cd3 .cd3-1{
+        display: flex;
+        justify-content: center;
+    }
+    .container-content .cara-daftar .content-cd .bg .cd3 .cd3-1 .cd31{
+        width: 287px;
+        height: 149px;
+        
+        background: #ffffff;
+        padding: 14px 16px;
+    
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+    
+    .container-content .cara-daftar .content-cd .bg .cd3 .cd3-2{
+        display: flex;
+        justify-content: center;
+    }
+    .container-content .cara-daftar .content-cd .bg .cd3 .cd3-2 .cd32{
+        width: 287px;
+        height: 149px;
+        
+        background: #ffffff;
+        padding: 14px 16px;
+    
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+    .container-content .cara-daftar .content-cd .bg .cd3 .cd3-3{
+        display: flex;
+        justify-content: center;
+    }
+    .container-content .cara-daftar .content-cd .bg .cd3 .cd3-3 .cd33{
+        width: 287px;
+        height: 149px;
+        
+        background: #ffffff;
+        padding: 14px 16px;
+    
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+    .container-content .cara-daftar .content-cd .bg .cd3 .cd3-4{
+        display: flex;
+        justify-content: center;
+    }
+    .container-content .cara-daftar .content-cd .bg .cd3 .cd3-4 .cd34{
+        width: 287px;
+        height: 149px;
+        
+        background: #ffffff;
+        padding: 14px 16px;
+    
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+    .container-content .cara-daftar .content-cd .bg .cd3 .cd3-5{
+        display: flex;
+        justify-content: center;
+    }   
+    .container-content .cara-daftar .content-cd .bg .cd3 .cd3-5 .cd35{
+        width: 287px;
+        height: 149px;
+        
+        background: #ffffff;
+        padding: 14px 16px;
+    
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    /* lokasi vaksin */
+    .container-content .lokasi-vaksin{
+        margin-top: 32px;
+        width: 100%;
+        /* background-color: rgba(63, 29, 255, 0.5); */
+    }
+    .container-content .lokasi-vaksin .content-lv{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+    }
+    .container-content .lokasi-vaksin .content-lv .lv1{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        align-items: flex-start;
+        gap: 12px;
+        /* background-color: rgb(255, 125, 125); */
+        padding-bottom: 18px;
+    }
+    .container-content .lokasi-vaksin .content-lv .lv1 h2 br, p br{
+        display: none;
+    }
+    .container-content .lokasi-vaksin .content-lv .lv2{
+        grid-area: lv2;
+        display: flex;
+        justify-content: flex-start;
+        padding-bottom: 18px;
+    
+        /* background-color: rgb(220, 255, 125); */
+        
+    }
+    .container-content .lokasi-vaksin .content-lv .lv2 .lv2-1{
+        display: flex;
+    }
+    .container-content .lokasi-vaksin .content-lv .lv2 .dropdown .btn{
+        display: flex;
+        gap: 5px;
+        align-items: center;
+    }
+    .container-content .lokasi-vaksin .content-lv .lv2 .dropdown .btn img{
+        width: 8px;
+        height: 8px;
+    }
+    .container-content .lokasi-vaksin .content-lv .lv2 .dropdown .btn .dropbtn {
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .container-content .lokasi-vaksin .content-lv .lv2 .dropdown .dropdown-content {
+        min-width: 60px;
+    }
+    .container-content .lokasi-vaksin .content-lv .lv2 .dropdown .dropdown-content a {
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .container-content .lokasi-vaksin .content-lv .lv2 .dropdown .dropdown-content a:hover {background-color: #f1f1f1}
+    .container-content .lokasi-vaksin .content-lv .lv2 .dropdown:hover .dropdown-content {
+    display: block;
+    }
+    .container-content .lokasi-vaksin .content-lv .lv2 .dropdown:hover .btn .dropbtn {
+    background-color: rgba(255, 255, 255, 0);
+    }
+    .container-content .lokasi-vaksin .content-lv .lv3{
+        grid-area: lv3;
+        /* background-color: rgb(125, 255, 222); */
+        display: flex;
+        gap: 18px;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    
+    .container-content .lokasi-vaksin .content-lv .lv3 .lv3-items{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 42px;
+        width: 138px;
+        align-content: center;
+        /* background-color: khaki; */
+    }
+    
+    .container-content .lokasi-vaksin .content-lv .lv3 .lv3-items img{
+        height: 138px;
+        width: 138px;
+        border-radius: 10px;
+        padding-bottom: 0px;
+        margin-bottom: 18px;
+    }
+    .container-content .lokasi-vaksin .content-lv .lv3 .lv3-items h2#title{
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 30px;
+        text-align: center;
+        color: #230A44;
+        padding-bottom: 16px;
+    
+    }
+    .container-content .lokasi-vaksin .content-lv .lv3 .lv3-items .content{
+        display: flex;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 18px;
+        padding-bottom: 12px;
+    
+        
+    }
+    .container-content .lokasi-vaksin .content-lv .lv3 .lv3-items .content .left{
+        color: rgba(93, 101, 107, 0.78);
+        font-weight: 400;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+    .container-content .lokasi-vaksin .content-lv .lv3 .lv3-items .content .right{
+        color: #5D656B;
+        font-weight: 500;
+        padding-left: 12px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+    .container-content .lokasi-vaksin .content-lv .lv3 .lv3-items .daftar a{
+        font-weight: bold;
+        font-size: 10px;
+        line-height: 18px;
+    }
+
+    /* banner */
+    .container-content .banner{
+        width: 100%;
+        height: 214px;
+        margin-top: 32px;
+        box-sizing: border-box;
+        border-radius: 28px;
+        background: none;
+        scroll-margin-top: 230px;
+        background-color: #2A7DF4;
+        padding: 18px;
+        display: flex;
+        align-items: center;
+    }
+    .container-content .banner .content-banner{
+        padding-top: 0px;
+        display: flex;
+        flex-direction: column;
+        margin-left: 0px;
+        gap: 10px;
+    }
+    .container-content .banner .content-banner h2{
+        font-weight: bold;
+        font-size: 21px;
+        line-height: 31px;
+        color: #FFFFFF;
+        padding-bottom: 0px;
+    }
+    .container-content .banner .content-banner p{
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 18px;
+        color: #FFFFFF;
+        padding-bottom: 0px;
+    
+    }
+    .container-content .banner .content-banner button{
+        width: 136px;
+        height: 38px;
+        
+    
+        background: #FFFFFF;
+        border-radius: 4px;
+        border: 0;
+        font-weight: bold;
+        font-size: 10px;
+        line-height: 18px;
+        color: #2A7DF4;
+        cursor: pointer;
+    }
+
+    /* footer */
+    .container-content .footer{
+        display: grid;
+        margin-top: 42px;
+        width: 100%;
+    }
+    .container-content .footer .content-ft{
+        display: grid;
+    }
+    .container-content .footer .content-ft .ft1{
+        display: grid;
+        grid-template-areas: 
+        "lp lp lp lp lp lp"
+        "nvg nvg nvg cmp cmp cmp"
+        "lrn lrn lrn more more more"
+        ;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        align-self: center;
+        gap: 24px;
+    }
+    .container-content .footer .content-ft .ft1 ul{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 15px;
+        letter-spacing: -0.20625px;
+        color: #22445E;
+    }
+    .container-content .footer .content-ft .ft1 span{
+        color: #22445E;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.20625px;
+    }
+    .container-content .footer .content-ft .ft1 ul li{
+        cursor: pointer;
+    }
+    .container-content .footer .content-ft .ft1 .lp{
+        grid-area: lp;
+        display: flex;
+        flex-direction: column;
+        gap: 9px;
+    
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        color: #718596;
+        margin-right: 80px;
+    
+    }
+    .container-content .footer .content-ft .ft1 .lp .logo{
+        display: flex;
+        font-style: normal;
+        font-weight: bold;
+        line-height: 33px;
+        align-items: flex-start;
+        height: 23px;
+        cursor: pointer;
+    }
+    .container-content .footer .content-ft .ft1 .lp .logo img{
+        height: 20px;
+        width: 20px;
+    }
+    .container-content .footer .content-ft .ft1 .lp .logo h1{
+        /* position: absolute; */
+        width: 246px;
+        height: 33px;
+        margin-left: 13px;
+        font-size: 13.1879px;
+        line-height: 20px;
+        font-weight: 400;
+    }
+    .container-content .footer .content-ft .ft1 .lp .logo h1 span{
+        font-weight: bold;
+        font-size: 13.1879px;
+        line-height: 20px;
+        color: #2A7DF4;
+    }
+    .container-content .footer .content-ft .ft1 .nvg{
+        grid-area: nvg;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+    .container-content .footer .content-ft .ft1 .cmp{
+        grid-area: cmp;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+    .container-content .footer .content-ft .ft1 .lrn{
+        grid-area: lrn;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+    .container-content .footer .content-ft .ft1 .more{
+        grid-area: more;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+    .container-content .footer .content-ft .ft2{
+        display: flex;
+        justify-content: center;
+        padding: 32px 0 36px 0;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 15px;
+        letter-spacing: -0.20625px;
+        color: #22445E;
+    }
+    .container-content .footer .content-ft .ft2 span{
+        font-weight: 700;
+        cursor: pointer;
     }
 }
 
