@@ -1877,7 +1877,7 @@ background-color: rgba(255, 255, 255, 0);
         font-size: 12px;
         line-height: 18px;
         color: #718596;
-        margin-right: 80px;
+        margin-right: 0px;
     
     }
     .container-content .footer .content-ft .ft1 .lp .logo{
@@ -1897,7 +1897,7 @@ background-color: rgba(255, 255, 255, 0);
         /* position: absolute; */
         width: 246px;
         height: 33px;
-        margin-left: 13px;
+        margin-left: 10px;
         font-size: 13.1879px;
         line-height: 20px;
         font-weight: 400;
