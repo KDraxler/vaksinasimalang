@@ -949,6 +949,7 @@ background-color: rgba(255, 255, 255, 0);
     padding-left: 12px;
     display: flex;
     flex-direction: column;
+    text-align: end;
     gap: 8px;
 }
 .container-content .lokasi-vaksin .content-lv .lv3 .lv3-items .daftar a{
@@ -1198,6 +1199,79 @@ background-color: rgba(255, 255, 255, 0);
         height: 70px;
         background-color: #adbacc;
     }
+    .navigation .nav-items{
+        height: 100%;
+        padding: 0 72px;
+        margin: auto;
+        max-width: 1442px;
+    
+        display: flex;
+        justify-content: space-between;
+        font-weight: 400;
+        align-items: center;
+        /* box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px; */
+    }
+    .navigation .nav-items .logo{
+        display: flex;
+        font-style: normal;
+        font-weight: bold;
+        line-height: 33px;
+        align-items: center;
+        cursor: pointer;
+    }
+    .navigation .nav-items .logo img{
+        height: 48px;
+        width: 48px;
+    }
+    .navigation .nav-items .logo h1{
+        /* position: absolute; */
+        width: 246px;
+        height: 33px;
+        margin-left: 13px;
+        font-size: 30px;
+        font-style: normal;
+        line-height: 33px;
+        font-weight: 400;
+    }
+    .navigation .nav-items .logo h1 span{
+        font-weight: 700;
+    }
+    .navigation .nav-items .menu{
+        /* display: flex; */
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .navigation .nav-items .menu ul{
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        cursor: pointer;
+        gap: 48px;
+    }
+    .navigation .nav-items .menu ul li.active a{
+        color: #2A7DF4;
+    
+    }
+    .navigation .nav-items .login button{
+        width: 202px;
+        height: 54px;
+        padding: 0 13px 0 13px;
+        background-color:rgba(255,0,0,0);
+        border-radius: 5px;
+        border: #2A7DF4 2px solid;
+        color: #2A7DF4;
+        font-weight: 700;
+        font-size: 18px;
+        cursor: pointer;
+    }
+    .navigation .nav-items .login button:hover{
+        background-color: #2A7DF4;
+        border: none;
+        color: #FAFAFA;
+    }
+
+    /* body */
     .container-content{
         display: flex;
         flex-direction: column;
