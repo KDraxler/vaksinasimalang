@@ -1363,16 +1363,16 @@ background-color: rgba(255, 255, 255, 0);
         height: 41px;
         display: flex;
         padding: 6px 8px;
-        gap: 20px;
+        gap: 9px;
     }
     .container-content .home .content-home .ch5 .ch5-box img{
-        height: 13.5px;
-        width: 13.5px;
+        height: 16px;
+        width: 16px;
     }
     .container-content .home .content-home .ch5 .ch5-box input{
         border: 0;
         /* width: 453px; */
-        width: 100%;
+        width: 70%;
         height: 12px;
         font-weight: normal;
         font-size: 8px;
