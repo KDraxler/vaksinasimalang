@@ -183,7 +183,7 @@ p#desc{
 }
 /* menu togle */
 .navigation .nav-items .menu-togle{
-    display: flex;
+    display: none;
     flex-direction: column;
     height: 12px;
     justify-content: space-between;
@@ -191,10 +191,12 @@ p#desc{
 }
 .navigation .nav-items .menu-togle input{
     position: absolute;
-    height: 100%;
-    width: 100%;
+    height: 12px;
+    width: 18px;
     opacity: 0;
     cursor: pointer;
+    z-index: 22;
+
 }
 .navigation .nav-items .menu-togle span{
     display: block;
@@ -202,12 +204,14 @@ p#desc{
     height: 1.5px;
     background-color: #183B56;
     border-radius: 3px;
+    transition: all 0.5s;
 }
 /* menu toogle animation */
 .navigation .nav-items .menu-togle span:nth-child(2){
     width: 65%;
-    background-color: #A3C4F2;
-
+    /* background-color: #A3C4F2; */
+    background-color: red;
+    transform-origin: 0 0;
 }
 .navigation .nav-items .menu-togle span:nth-child(3){
     background-color: #A3C4F2;
@@ -216,9 +220,22 @@ p#desc{
     width: 65%;
     background-color: #A3C4F2;
     align-self: flex-end;
+    transform-origin: 100% 100%;
 }
 
+.navigation .nav-items .menu-togle input:checked ~ span:nth-child(2){
+    transform: rotate(45deg) translate(0px, -1.35px);
+    align-self: center;
 
+}
+.navigation .nav-items .menu-togle input:checked ~ span:nth-child(3){
+    transform: rotate(-45deg);
+}
+.navigation .nav-items .menu-togle input:checked ~ span:nth-child(4){
+    transform: rotate(45deg) translate(1px, 0px);
+    align-self: center;
+
+}
 
 
 /* ------------------------------------------------------------- */
@@ -1310,6 +1327,9 @@ background-color: rgba(255, 255, 255, 0);
         background-color: #2A7DF4;
         border: none;
         color: #FAFAFA;
+    }
+    .navigation .nav-items .menu-togle{
+        display: flex;
     }
 
     /* body */
