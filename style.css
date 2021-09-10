@@ -162,7 +162,24 @@ p#desc{
 }
 .navigation .nav-items .menu ul li.active a{
     color: #2A7DF4;
-
+}
+.navigation .nav-items .menu .login button{
+    display: none;
+    width: 150px;
+    height: 34px;
+    padding: 0 13px 0 13px;
+    background-color:rgba(255,0,0,0);
+    border-radius: 5px;
+    border: #2A7DF4 2px solid;
+    color: #2A7DF4;
+    font-weight: 700;
+    font-size: 12px;
+    cursor: pointer;
+}
+.navigation .nav-items .menu .login button:hover{
+    background-color: #2A7DF4;
+    border: none;
+    color: #FAFAFA;
 }
 .navigation .nav-items .login button{
     width: 202px;
@@ -1300,6 +1317,9 @@ background-color: rgba(255, 255, 255, 0);
         font-size: 12px;
         line-height: 18px;
         background-color: #22445E;
+    }
+    .navigation .nav-items .menu .login button{
+        display: block;
     }
     .navigation .nav-items .menu ul{
         position: absolute;
