@@ -1266,7 +1266,7 @@ background-color: rgba(255, 255, 255, 0);
         margin-top: 0;
     }
     body{
-        zoom: 100%;
+        zoom: 120%;
     }
     .navigation{
         /* overflow-x: auto; */
@@ -1326,7 +1326,7 @@ background-color: rgba(255, 255, 255, 0);
         right: 0;
         top: 0;
         height: 50vh;
-        width: 100vw;
+        width: 100%;
         justify-content: center;
         align-items: center;
         flex-direction: column;
@@ -2120,6 +2120,11 @@ background-color: rgba(255, 255, 255, 0);
     .container-content .footer .content-ft .ft2 span{
         font-weight: 700;
         cursor: pointer;
+    }
+}
+@media screen and (max-width:1080px) and (hover: none) and (pointer: coarse){
+    body{
+        zoom: 100%;
     }
 }
 
