@@ -209,8 +209,8 @@ p#desc{
 /* menu toogle animation */
 .navigation .nav-items .menu-togle span:nth-child(2){
     width: 65%;
-    /* background-color: #A3C4F2; */
-    background-color: red;
+    background-color: #A3C4F2;
+    /* background-color: red; */
     transform-origin: 0 0;
 }
 .navigation .nav-items .menu-togle span:nth-child(3){
@@ -224,16 +224,16 @@ p#desc{
 }
 
 .navigation .nav-items .menu-togle input:checked ~ span:nth-child(2){
-    transform: rotate(45deg) translate(0px, -1.35px);
-    align-self: center;
+    transform: rotate(45deg) translate(1.8px, -3.35px);
+    /* align-self: center; */
 
 }
 .navigation .nav-items .menu-togle input:checked ~ span:nth-child(3){
     transform: rotate(-45deg);
 }
 .navigation .nav-items .menu-togle input:checked ~ span:nth-child(4){
-    transform: rotate(45deg) translate(1px, 0px);
-    align-self: center;
+    transform: rotate(45deg) translate(-1px, 2.55px);
+    /* align-self: center; */
 
 }
 
