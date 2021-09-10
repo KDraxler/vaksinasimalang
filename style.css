@@ -198,6 +198,7 @@ p#desc{
     z-index: 22;
 
 }
+
 .navigation .nav-items .menu-togle span{
     display: block;
     width: 18px;
@@ -1251,7 +1252,7 @@ background-color: rgba(255, 255, 255, 0);
         zoom: 100%;
     }
     .navigation{
-        overflow-x: auto;
+        /* overflow-x: auto; */
         width: 100%;
         height: 70px;
         /* background-color: #adbacc; */
@@ -1294,18 +1295,37 @@ background-color: rgba(255, 255, 255, 0);
         font-weight: 700;
     }
     .navigation .nav-items .menu{
-        display: none;
+        /* display: none; */
         font-weight: 700;
-        font-size: 18px;
-        line-height: 22px;
+        font-size: 12px;
+        line-height: 18px;
+        background-color: #22445E;
     }
     .navigation .nav-items .menu ul{
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 50vh;
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: #fafafa;
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+
+        transform: translateY(-100%);
+        transition: all 1s;
         list-style: none;
         display: flex;
-        flex-direction: row;
+        /* flex-direction: row; */
         cursor: pointer;
         gap: 48px;
     }
+
+    .navigation .nav-items .menu ul.slide{
+        transform: translateY(0);
+    }
+
     .navigation .nav-items .menu ul li.active a{
         color: #2A7DF4;
     

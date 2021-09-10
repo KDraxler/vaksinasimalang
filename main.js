@@ -1,6 +1,11 @@
 const sections = document.querySelectorAll('section');
 const navLi = document.querySelectorAll('nav .nav-items .menu ul li');
+const menuTogle = document.querySelector('.menu-togle input');
+const nav = document.querySelector('nav ul');
 
+menuTogle.addEventListener('click', function(){
+    nav.classList.toggle('slide');
+});
 
 window.addEventListener('scroll', ()=> {
     scrollFunction()
