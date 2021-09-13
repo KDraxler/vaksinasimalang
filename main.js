@@ -2,9 +2,11 @@ const sections = document.querySelectorAll('section');
 const navLi = document.querySelectorAll('nav .nav-items .menu ul li');
 const menuTogle = document.querySelector('.menu-togle input');
 const nav = document.querySelector('nav ul');
+const overlay = document.querySelector('#overlay');
 
 menuTogle.addEventListener('click', function(){
     nav.classList.toggle('slide');
+    overlay.classList.toggle('overlay');
 });
 
 window.addEventListener('scroll', ()=> {
