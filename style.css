@@ -152,13 +152,15 @@ p#desc{
     font-weight: 700;
     font-size: 18px;
     line-height: 22px;
+    width: 50%;
 }
 .navigation .nav-items .menu ul{
     list-style: none;
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
     cursor: pointer;
-    gap: 48px;
+    /* gap: 28px; */
 }
 .navigation .nav-items .menu ul li.active a{
     color: #2A7DF4;
@@ -1380,7 +1382,7 @@ background-color: rgba(255, 255, 255, 0);
         background-color: rgba(0, 0, 0, 0.5);
         z-index: 8;
         display: block;
-        transition: 0.5s ease-in-out;
+        transition: 1s ease-in-out;
     }
     .container-content{
         display: flex;
