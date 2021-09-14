@@ -9,6 +9,12 @@ menuTogle.addEventListener('click', function(){
     overlay.classList.toggle('overlay');
 });
 
+overlay.addEventListener('click', function(){
+    nav.classList.remove('slide');
+    overlay.classList.remove('overlay');
+    menuTogle.checked = false;
+})
+
 window.addEventListener('scroll', ()=> {
     scrollFunction()
     
